@@ -1,3 +1,9 @@
+# revision 24043
+# category Package
+# catalog-ctan /fonts/ccicons
+# catalog-date 2011-09-20 20:51:57 +0200
+# catalog-license lppl1.3
+# catalog-version 1.3
 Name:		texlive-ccicons
 Version:	1.3
 Release:	1
@@ -46,6 +52,7 @@ Adobe Type 1 format) and LaTeX support macros are provided.
 #- source
 %doc %{_texmfdistdir}/source/latex/ccicons/ccicons.dtx
 %doc %{_texmfdistdir}/source/latex/ccicons/ccicons.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ Adobe Type 1 format) and LaTeX support macros are provided.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
