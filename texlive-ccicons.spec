@@ -6,7 +6,7 @@
 # catalog-version 1.3
 Name:		texlive-ccicons
 Version:	1.3
-Release:	1
+Release:	2
 Summary:	LaTeX support for Creative Commons icons
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ccicons
