@@ -1,16 +1,16 @@
-# revision 24043
+# revision 26608
 # category Package
-# catalog-ctan /fonts/ccicons
-# catalog-date 2011-09-20 20:51:57 +0200
-# catalog-license lppl1.3
-# catalog-version 1.3
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-ccicons
-Version:	1.3
-Release:	2
-Summary:	LaTeX support for Creative Commons icons
+Version:	20120807
+Release:	1
+Summary:	TeXLive ccicons package
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ccicons
-License:	LPPL1.3
+URL:		http://tug.org/texlive
+License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.source.tar.xz
@@ -20,9 +20,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package provides the means to typeset Creative Commons
-icons, in documents licensed under CC licences. A font (in
-Adobe Type 1 format) and LaTeX support macros are provided.
+TeXLive ccicons package.
 
 %post
     %{_sbindir}/texlive.post
@@ -41,6 +39,7 @@ Adobe Type 1 format) and LaTeX support macros are provided.
 %{_texmfdistdir}/tex/latex/ccicons/ccicons.sty
 %doc %{_texmfdistdir}/doc/latex/ccicons/ccicons.pdf
 #- source
+%doc %{_texmfdistdir}/source/fonts/ccicons/ccicons.sfd
 %doc %{_texmfdistdir}/source/latex/ccicons/ccicons.dtx
 %doc %{_texmfdistdir}/source/latex/ccicons/ccicons.ins
 
