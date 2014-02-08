@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-ccicons
 Version:	20120807
-Release:	1
+Release:	2
 Summary:	TeXLive ccicons package
 Group:		Publishing
 URL:		http://tug.org/texlive
