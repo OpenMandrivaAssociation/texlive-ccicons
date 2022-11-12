@@ -6,9 +6,9 @@ Summary:	LaTeX support for Creative Commons icons
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ccicons
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.r54512.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.doc.r54512.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.source.r54512.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
