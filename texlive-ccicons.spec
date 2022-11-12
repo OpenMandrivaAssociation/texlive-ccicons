@@ -1,20 +1,14 @@
-# revision 30020
-# category Package
-# catalog-ctan /fonts/ccicons
-# catalog-date 2013-04-17 11:42:52 +0200
-# catalog-license lppl1.3
-# catalog-version 1.5
 Name:		texlive-ccicons
 Epoch:		1
-Version:	1.6
-Release:	3
+Version:	54512
+Release:	1
 Summary:	LaTeX support for Creative Commons icons
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ccicons
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.r54512.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.doc.r54512.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.source.r54512.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ icons, in documents licensed under CC licences. A font (in
 Adobe Type 1 format) and LaTeX support macros are provided.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ Adobe Type 1 format) and LaTeX support macros are provided.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
