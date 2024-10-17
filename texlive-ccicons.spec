@@ -4,7 +4,7 @@ Version:	54512
 Release:	2
 Summary:	LaTeX support for Creative Commons icons
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ccicons
+URL:		https://www.ctan.org/tex-archive/fonts/ccicons
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ccicons.doc.r%{version}.tar.xz
